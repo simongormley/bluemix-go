@@ -19,6 +19,7 @@ type APIKeyMetadata struct {
 	Version    string `json:"version"`
 	Crn        string `json:"crn"`
 	CreatedAt  string `json:"createdAt"`
+	CreatedBy  string `json:"createdBy"`
 	ModifiedAt string `json:"modifiedAt"`
 }
 
@@ -41,6 +42,7 @@ func (r APIKeyResource) ToModel() models.APIKey {
 		Version:    meta.Version,
 		Crn:        meta.Crn,
 		CreatedAt:  meta.CreatedAt,
+		CreatedBy:  meta.CreatedBy,
 		ModifiedAt: meta.ModifiedAt,
 
 		Name:         entity.Name,

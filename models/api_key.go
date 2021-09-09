@@ -5,6 +5,7 @@ type APIKey struct {
 	Version    string `json:"version,omitempty"`
 	Crn        string `json:"crn,omitempty"`
 	CreatedAt  string `json:"createdAt,omitempty"`
+	CreatedBy  string `json:"createdBy,omitempty"`
 	ModifiedAt string `json:"modifiedAt,omitempty"`
 
 	Name         string `json:"name,omitempty"`
